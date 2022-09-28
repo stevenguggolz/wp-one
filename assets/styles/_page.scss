@@ -1,0 +1,20 @@
+// IE Media Query
+// @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { }
+
+// Edge Media Query
+// @supports (-ms-ime-align:auto) { }
+
+// Edge Media Query
+// @media (min-width: $desktop-up) {} 
+// @media (max-width: $tablet-down) {}
+// @media (min-width: $tablet-up) {}
+// @media (max-width: $phone-down) {}
+
+
+.elementor-nav-menu {
+    &--layout-vertical {
+        a {
+            display: inline-block;
+        }
+    }
+}

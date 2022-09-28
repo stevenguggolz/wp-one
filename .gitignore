@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+.sass-cache
+*.DS_Store
+package-lock.json
+composer.lock
+yarn.lock
+mix-manifest.json
+
+# IntelliJ project files
+.idea
+*.idea
+*.iml
+out
+gen

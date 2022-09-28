@@ -1,0 +1,34 @@
+@import "../variable";
+
+
+// BUTTON ICON
+.elementor-button-icon svg {
+    width: auto;
+    height: auto;
+
+    @media (max-width: $tablet-down) {}
+
+    @media (max-width: $phone-down) {}
+}
+
+.elementor-widget-button {
+
+    &.childtheme-button-primary {
+        .elementor-button {
+            background-color: $primary;
+        }
+    }
+
+    &.childtheme-button-secondary {
+        .elementor-button {
+            background-color: $secondary;
+        }
+    }
+
+    &.childtheme-button-link {
+        .elementor-button {
+            background-color: transparent;
+            color: $primary;
+        }
+    }
+}

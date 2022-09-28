@@ -1,0 +1,59 @@
+
+
+//
+// COLORS //
+//
+
+// Elementor Basic Color Variables
+$primary:       var(--e-global-color-primary);
+$secondary:     var(--e-global-color-secondary);
+$text:          var(--e-global-color-text);
+$accent:        var(--e-global-color-accent);
+
+// Custom Color Variables - check IDs with Elementor variables before use
+$white:         var(--e-global-color-9caca89);
+$gray-lightest:  var(--e-global-color-a57ca44);
+$gray-medium:   var(--e-global-color-f62630a);
+$gray-darkest:  var(--e-global-color-dacbd51);
+
+
+//
+// FONTFAMILIES //
+//
+
+$font-family-base:      var(--e-global-typography-text-font-family);
+$font-family-headings:  var(--e-global-typography-primary-font-family);
+
+
+//
+// BREAKPOINTS //
+//
+// Compare breakpints with the Elementor breakpoints in "Website-Einstellungen > Layout > Breakpoints"
+
+$desktop-up: 1025px;
+$tablet-down: 1024px;
+$tablet-up: 768px;
+$phone-down: 767px;
+
+
+//
+// GRID //
+//
+
+:root {
+    --container-padding-xs: 20px;
+    --container-padding-md: 20px;
+    --container-padding-lg: 40px;
+}
+
+//
+// SPACER //
+//
+
+$spacer-od-0: 0;
+$spacer-od-1: 10px;
+$spacer-od-2: 16px;
+$spacer-od-3: 30px;
+$spacer-od-4: 50px;
+$spacer-od-5: 80px;
+$spacer-od-6: 140px;

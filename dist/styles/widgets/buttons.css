@@ -1,0 +1,22 @@
+:root {
+  --container-padding-xs: 20px;
+  --container-padding-md: 20px;
+  --container-padding-lg: 40px;
+}
+
+.elementor-button-icon svg {
+  width: auto;
+  height: auto;
+}
+.elementor-widget-button.childtheme-button-primary .elementor-button {
+  background-color: var(--e-global-color-primary);
+}
+.elementor-widget-button.childtheme-button-secondary .elementor-button {
+  background-color: var(--e-global-color-secondary);
+}
+.elementor-widget-button.childtheme-button-link .elementor-button {
+  background-color: transparent;
+  color: var(--e-global-color-primary);
+}
+
+/*# sourceMappingURL=buttons.css.map*/

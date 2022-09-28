@@ -1,0 +1,104 @@
+@import "../variable";
+
+.od-spacing {
+    &-0 {
+        padding-top: $spacer-od-0;
+    }
+
+    &-1 {
+        padding-top: $spacer-od-1;
+    }
+
+    &-2 {
+        padding-top: $spacer-od-2;
+    }
+
+    &-3 {
+        padding-top: $spacer-od-3;
+    }
+
+    &-4 {
+        padding-top: $spacer-od-4;
+    }
+
+    &-5 {
+        padding-top: $spacer-od-5;
+    }
+
+    &-6 {
+        padding-top: $spacer-od-6;
+    }
+
+    @media (max-width: $tablet-down) {
+        &-tablet {
+            &-0 {
+                padding-top: $spacer-od-0;
+            }
+
+            &-1 {
+                padding-top: $spacer-od-1;
+            }
+
+            &-2 {
+                padding-top: $spacer-od-2;
+            }
+
+            &-3 {
+                padding-top: $spacer-od-3;
+            }
+
+            &-4 {
+                padding-top: $spacer-od-4;
+            }
+
+            &-5 {
+                padding-top: $spacer-od-5;
+            }
+
+            &-6 {
+                padding-top: $spacer-od-6;
+            }
+        }
+    }
+    @media (max-width: $phone-down) {
+        &-mobile {
+            &-0 {
+                padding-top: $spacer-od-0;
+            }
+
+            &-1 {
+                padding-top: $spacer-od-1;
+            }
+
+            &-2 {
+                padding-top: $spacer-od-2;
+            }
+
+            &-3 {
+                padding-top: $spacer-od-3;
+            }
+
+            &-4 {
+                padding-top: $spacer-od-4;
+            }
+
+            &-5 {
+                padding-top: $spacer-od-5;
+            }
+
+            &-6 {
+                padding-top: $spacer-od-6;
+            }
+        }
+    }
+}
+
+.elementor-editor-active {
+    .elementor-widget-od-spacer {
+        background-color: rgb(213 218 223 / 15%) !important;
+
+        i.eicon-spacer {
+            display: none!important;
+        }
+    }
+}

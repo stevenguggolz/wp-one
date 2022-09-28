@@ -1,0 +1,18 @@
+{
+    "private": true,
+    "scripts": {
+        "watch": "mix watch",
+        "build": "mix",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.27.7",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "fs": "0.0.1-security",
+        "cross-env": "^5.1",
+        "laravel-mix": "^6.0.28",
+        "resolve-url-loader": "^4.0.0",
+        "sass": "^1.38.0",
+        "sass-loader": "^12.1.0"
+    }
+}
