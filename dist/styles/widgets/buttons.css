@@ -10,6 +10,19 @@
 }
 .elementor-widget-button.childtheme-button-primary .elementor-button {
   background-color: var(--e-global-color-primary);
+  border-radius: 0;
+  border: 2px solid var(--e-global-color-primary);
+}
+.elementor-widget-button.childtheme-button-primary .elementor-button .elementor-button-text {
+  font-size: 18px;
+  transition: all ease 0.4s;
+  font-weight: 600;
+}
+.elementor-widget-button.childtheme-button-primary .elementor-button:hover {
+  background-color: transparent;
+}
+.elementor-widget-button.childtheme-button-primary .elementor-button:hover .elementor-button-text {
+  color: var(--e-global-color-primary);
 }
 .elementor-widget-button.childtheme-button-secondary .elementor-button {
   background-color: var(--e-global-color-secondary);

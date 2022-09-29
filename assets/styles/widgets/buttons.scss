@@ -16,6 +16,22 @@
     &.childtheme-button-primary {
         .elementor-button {
             background-color: $primary;
+            border-radius: 0;
+            border: 2px solid $primary;
+
+            .elementor-button-text {
+                font-size: 18px;
+                transition: all ease 0.4s;
+                font-weight: 600;
+            }
+
+            &:hover {
+                background-color: transparent;
+             
+                .elementor-button-text {
+                    color: $primary;
+                }
+            }
         }
     }
 

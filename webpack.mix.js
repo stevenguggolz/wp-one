@@ -16,12 +16,12 @@ files.forEach(file => {
 mix.browserSync({
 
     // DEV URL
-    proxy: 'https://childvorlage.one-dot.io/',
+    proxy: 'https://ostern-neu-erleben.de/',
     files: ['dist/**/*.css', 'dist/**/*.js'],
     rewriteRules: [
         {
             // Pfad zum dist-Ordner auf DEV
-            match: new RegExp('/wp-content/themes/wp-childtheme/dist/','g'),
+            match: new RegExp('/wp-content/themes/wp-one/dist/','g'),
             fn: function() {
                 return '/';
             },
@@ -29,7 +29,7 @@ mix.browserSync({
         {
             // Pfad zur scripts theme.min.js auf DEV
             match: new RegExp(
-                '/wp-content/themes/wp-childtheme/dist/scripts/theme.min.js'),
+                '/wp-content/themes/wp-one/dist/scripts/theme.min.js'),
             fn: function() {
                 return '/scripts/theme.min.js';
             },
