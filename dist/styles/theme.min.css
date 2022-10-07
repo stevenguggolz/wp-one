@@ -59,95 +59,39 @@ a {
   margin: 0;
   padding: 0;
 }
-.od-contactform .elementor-field-type-acceptance .elementor-field-option {
-  line-height: 20px !important;
+.od-contactform .elementor-field-type-select label {
+  font-size: 11px;
+  font-weight: 600;
+  color: gray;
+  top: 5px;
 }
-.od-contactform .elementor-field-type-acceptance input[type=checkbox] + label::before {
-  content: "";
-  width: 18px;
-  height: 18px;
-  border: 1px solid var(--e-global-color-1a70b2e7);
-  display: block;
+.od-contactform .elementor-field-type-text label, .od-contactform .elementor-field-type-email label, .od-contactform .elementor-field-type-textarea label, .od-contactform .elementor-field-type-tel label, .od-contactform .elementor-field-type-url label {
   position: absolute;
-  left: 0;
-  top: 0;
-  background-color: transparent;
+  margin: 0;
+  left: 18px;
+  font-size: 16px;
+  top: 26px;
+  transition: all ease 0.4s;
 }
-.od-contactform .elementor-field-type-acceptance input[type=checkbox]:checked + label::before {
-  background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' d='M9.475.013l-5.882 5.92L.52 2.843 0 3.367l3.593 3.616L9.996.537z'/%3E%3C/defs%3E%3Cuse fill='%23EF7E90' xlink:href='%23a' fill-rule='evenodd'/%3E%3C/svg%3E");
-  background-position: center;
-  background-repeat: no-repeat;
+.od-contactform .elementor-field-type-text label.active, .od-contactform .elementor-field-type-email label.active, .od-contactform .elementor-field-type-textarea label.active, .od-contactform .elementor-field-type-tel label.active, .od-contactform .elementor-field-type-url label.active {
+  font-size: 11px;
+  font-weight: 600;
+  color: gray;
+  top: 5px;
 }
-.od-contactform .elementor-field-type-acceptance input[type=checkbox]:checked + label::after {
-  transform: scale(1.5);
-  opacity: 0;
+.od-contactform .elementor-field-type-text input, .od-contactform .elementor-field-type-text textarea, .od-contactform .elementor-field-type-email input, .od-contactform .elementor-field-type-email textarea, .od-contactform .elementor-field-type-textarea input, .od-contactform .elementor-field-type-textarea textarea, .od-contactform .elementor-field-type-tel input, .od-contactform .elementor-field-type-tel textarea, .od-contactform .elementor-field-type-url input, .od-contactform .elementor-field-type-url textarea {
+  padding: 24px 14px 10px;
 }
-.od-contactform .elementor-field-type-acceptance input {
-  opacity: 0;
-  display: block !important;
-  height: 1px;
-  width: 1px;
+.od-contactform .elementor-field-type-text input:focus, .od-contactform .elementor-field-type-text textarea:focus, .od-contactform .elementor-field-type-email input:focus, .od-contactform .elementor-field-type-email textarea:focus, .od-contactform .elementor-field-type-textarea input:focus, .od-contactform .elementor-field-type-textarea textarea:focus, .od-contactform .elementor-field-type-tel input:focus, .od-contactform .elementor-field-type-tel textarea:focus, .od-contactform .elementor-field-type-url input:focus, .od-contactform .elementor-field-type-url textarea:focus {
+  box-shadow: none;
+  border-color: var(--e-global-color-primary) !important;
+}
+.od-contactform .elementor-field-type-acceptance {
+  margin: 20px 0;
 }
 .od-contactform .elementor-field-type-acceptance label {
-  padding-left: 30px;
-  position: relative;
-  display: block !important;
-  font-size: 14px !important;
-  line-height: 22px !important;
-}
-.od-contactform .elementor-field-type-acceptance label a {
-  font-size: 14px !important;
-  line-height: 22px !important;
-}
-.od-contactform .elementor-field-type-text input:focus,
-.od-contactform .elementor-field-type-text textarea:focus,
-.od-contactform .elementor-field-type-email input:focus,
-.od-contactform .elementor-field-type-email textarea:focus,
-.od-contactform .elementor-field-type-tel input:focus,
-.od-contactform .elementor-field-type-tel textarea:focus,
-.od-contactform .elementor-field-type-textarea input:focus,
-.od-contactform .elementor-field-type-textarea textarea:focus {
-  box-shadow: none;
-  border-color: var(--e-global-color-secondary) !important;
-}
-.od-contactform .elementor-field-type-text label,
-.od-contactform .elementor-field-type-email label,
-.od-contactform .elementor-field-type-tel label,
-.od-contactform .elementor-field-type-textarea label {
-  position: absolute;
-  top: 20px;
-  transition: all ease 0.4s;
-  display: block;
-  width: 100%;
-}
-.od-contactform .elementor-field-type-text label.active,
-.od-contactform .elementor-field-type-email label.active,
-.od-contactform .elementor-field-type-tel label.active,
-.od-contactform .elementor-field-type-textarea label.active {
-  top: 0;
   font-size: 12px !important;
-  font-weight: 700 !important;
-  color: var(--e-global-color-secondary) !important;
-}
-.od-contactform .elementor-field-type-text input:-webkit-autofill,
-.od-contactform .elementor-field-type-text input:-webkit-autofill:hover,
-.od-contactform .elementor-field-type-text input:-webkit-autofill:focus,
-.od-contactform .elementor-field-type-text input:-webkit-autofill:active,
-.od-contactform .elementor-field-type-email input:-webkit-autofill,
-.od-contactform .elementor-field-type-email input:-webkit-autofill:hover,
-.od-contactform .elementor-field-type-email input:-webkit-autofill:focus,
-.od-contactform .elementor-field-type-email input:-webkit-autofill:active,
-.od-contactform .elementor-field-type-tel input:-webkit-autofill,
-.od-contactform .elementor-field-type-tel input:-webkit-autofill:hover,
-.od-contactform .elementor-field-type-tel input:-webkit-autofill:focus,
-.od-contactform .elementor-field-type-tel input:-webkit-autofill:active,
-.od-contactform .elementor-field-type-textarea input:-webkit-autofill,
-.od-contactform .elementor-field-type-textarea input:-webkit-autofill:hover,
-.od-contactform .elementor-field-type-textarea input:-webkit-autofill:focus,
-.od-contactform .elementor-field-type-textarea input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
-  -webkit-text-fill-color: var(--e-global-color-text) !important;
-  color: var(--e-global-color-text) !important;
+  color: gray;
 }
 
 .facetwp-facet .facetwp-checkbox {
@@ -184,6 +128,187 @@ a {
 }
 .od-accordion .elementor-tab-content {
   border-top: none;
+}
+
+@media (min-width: 768px) {
+  .kirchenfinder form {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.kirchenfinder form label {
+  font-weight: 900;
+}
+.kirchenfinder form .wpsl-input label, .kirchenfinder form #wpsl-radius label, .kirchenfinder form #wpsl-category label {
+  width: inherit;
+}
+.kirchenfinder form .wpsl-input {
+  display: flex !important;
+  align-items: center;
+  margin-right: 40px !important;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .kirchenfinder form .wpsl-input {
+    margin-bottom: 0 !important;
+    width: 30% !important;
+  }
+}
+@media (min-width: 1025px) {
+  .kirchenfinder form .wpsl-input {
+    flex-wrap: nowrap;
+    width: inherit !important;
+  }
+}
+.kirchenfinder form .wpsl-input input {
+  border-radius: 0 !important;
+  height: 44px !important;
+}
+.kirchenfinder form .wpsl-input input:focus {
+  outline: none;
+  border-color: var(--e-global-color-primary) !important;
+}
+.kirchenfinder form .wpsl-select-wrap {
+  margin-right: 40px !important;
+}
+@media (min-width: 768px) {
+  .kirchenfinder form .wpsl-select-wrap {
+    margin-bottom: 0 !important;
+    width: 30% !important;
+  }
+}
+@media (min-width: 1025px) {
+  .kirchenfinder form .wpsl-select-wrap {
+    width: inherit !important;
+  }
+}
+.kirchenfinder form #wpsl-radius {
+  display: flex !important;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .kirchenfinder form #wpsl-radius {
+    flex-wrap: nowrap;
+  }
+}
+.kirchenfinder p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.kirchenfinder #wpsl-search-wrap .wpsl-dropdown {
+  width: 100% !important;
+}
+@media (min-width: 768px) {
+  .kirchenfinder #wpsl-search-wrap .wpsl-dropdown {
+    width: 30% !important;
+  }
+}
+@media (min-width: 1025px) {
+  .kirchenfinder #wpsl-search-wrap .wpsl-dropdown {
+    width: inherit !important;
+  }
+}
+.kirchenfinder .wpsl-dropdown {
+  min-width: 200px !important;
+  border-radius: 0;
+  height: 44px !important;
+}
+.kirchenfinder #wpsl-result-list {
+  width: 100% !important;
+  min-width: 300px !important;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .kirchenfinder #wpsl-result-list {
+    width: 20% !important;
+  }
+}
+.kirchenfinder #wpsl-gmap {
+  width: 100%;
+  min-width: 300px;
+  max-width: 1500px;
+}
+@media (min-width: 768px) {
+  .kirchenfinder #wpsl-gmap {
+    width: 60%;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1025px) {
+  .kirchenfinder #wpsl-gmap {
+    width: 70%;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1600px) {
+  .kirchenfinder #wpsl-gmap {
+    width: 80%;
+  }
+}
+.kirchenfinder #wpsl-stores, .kirchenfinder #wpsl-direction-details, .kirchenfinder #wpsl-gmap {
+  height: 320px !important;
+}
+@media (min-width: 768px) {
+  .kirchenfinder #wpsl-stores, .kirchenfinder #wpsl-direction-details, .kirchenfinder #wpsl-gmap {
+    height: 700px !important;
+  }
+}
+.kirchenfinder #wpsl-stores {
+  min-height: 300px;
+}
+.kirchenfinder #wpsl-search-input {
+  width: 100% !important;
+}
+@media (min-width: 1025px) {
+  .kirchenfinder #wpsl-search-input {
+    width: 250px !important;
+  }
+}
+.kirchenfinder #wpsl-search-btn {
+  background: var(--e-global-color-primary) !important;
+  color: #ffffff;
+  height: 44px;
+  padding: 0 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid var(--e-global-color-primary);
+  border-radius: 0;
+}
+@media (max-width: 767px) {
+  .kirchenfinder #wpsl-search-btn {
+    width: 100%;
+  }
+}
+.kirchenfinder #wpsl-search-btn:hover {
+  color: var(--e-global-color-primary);
+  background-color: transparent !important;
+}
+@media (max-width: 767px) {
+  .kirchenfinder .wpsl-search-btn-wrap {
+    width: 100%;
+  }
+}
+.kirchenfinder #wpsl-gmap img[src*="red@2x"] {
+  display: none !important;
+}
+.kirchenfinder .wpsl-search {
+  padding: 20px;
+}
+.kirchenfinder .wpsl-directions {
+  display: inherit !important;
+}
+.kirchenfinder .konfession, .kirchenfinder .church {
+  margin: 0 0 5px 0 !important;
+}
+.kirchenfinder #wpsl-wrap #wpsl-result-list li {
+  border-bottom: 1px solid var(--e-global-color-secondary);
+  padding: 30px 0;
+}
+.kirchenfinder #wpsl-wrap #wpsl-result-list li > span {
+  font-size: 14px;
+  font-weight: 700;
 }
 
 @keyframes fadeInUp2 {
