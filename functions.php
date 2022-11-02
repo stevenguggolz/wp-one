@@ -268,4 +268,25 @@ add_action( 'elementor_pro/init', function() {
 */
 
 
+// Elias add javascript for accordion to faq for google
+// START
+function ti_custom_javascript() {
+	wp_enqueue_script( 'accordion-faq-script', get_stylesheet_directory_uri(). '/accordionFAQ.js');
+
+}
+add_action('wp_enqueue_scripts', 'ti_custom_javascript');
+function mind_defer_scripts( $tag, $handle, $src ) {
+  $defer = array( 
+    'accordion-faq-script',
+  );
+  if ( in_array( $handle, $defer ) ) {
+     return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
+  }
+    
+    return $tag;
+} 
+add_filter( 'script_loader_tag', 'mind_defer_scripts', 10, 3 );
+
+// // END
+// Elias add javascript for accordion to faq for google
 
